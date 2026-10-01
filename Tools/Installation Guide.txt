@@ -1,0 +1,30 @@
+INSTALLING QUARKSWITCH
+
+1. Drag QuarkSwitch.app to the Applications folder shown in this window.
+2. Open Applications. For the first launch, right-click QuarkSwitch and choose Open.
+3. If macOS blocks the app, open System Settings > Privacy & Security, find the
+   blocked-app message, and choose Open Anyway. Confirm opening when prompted.
+
+This release uses an ad-hoc signature. It is not signed with Developer ID and
+is not notarized by Apple. Gatekeeper warnings are expected and the available
+Open/Open Anyway actions may vary by macOS version or your Mac's policies.
+
+Only if you trust the source and deliberately want to remove quarantine from
+the installed copy, open Terminal and run:
+
+    xattr -dr com.apple.quarantine "/Applications/QuarkSwitch.app"
+
+This command removes the quarantine attribute; it does not notarize the app or
+prove that it is safe. Managed Macs may enforce additional restrictions.
+
+AFTER INSTALLATION
+
+QuarkSwitch runs in the menu bar. In Settings > Privacy, grant Accessibility
+and Input Monitoring so it can correct words across applications. Relaunch
+QuarkSwitch if macOS asks you to do so after granting access.
+
+Automatic layout correction occurs after a word boundary such as Space.
+Option-Space converts selected text. Option-Command-Space converts the last word.
+
+Developer: Quarks
+Website: https://quarks.kz

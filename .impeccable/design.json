@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-30T21:34:47Z",
+  "title": "Design System: QuarkSwitch",
+  "extensions": {
+    "colorMeta": {},
+    "typographyMeta": {
+      "display": {
+        "displayName": "Onboarding Display",
+        "purpose": "The centered first-run promise only."
+      },
+      "headline": {
+        "displayName": "Settings Headline",
+        "purpose": "The title of each Settings detail section."
+      },
+      "statistic": {
+        "displayName": "Aggregate Statistic",
+        "purpose": "Local correction counts in the Statistics section."
+      },
+      "body": {
+        "displayName": "System Body",
+        "purpose": "Controls, values, lists, and operational language."
+      },
+      "code": {
+        "displayName": "Literal Monospace",
+        "purpose": "Typed characters, keyboard shortcuts, mappings, and bundle identifiers."
+      }
+    },
+    "shadows": [],
+    "motion": [],
+    "breakpoints": [],
+    "components": [],
+    "narrative": {
+      "northStar": "The Restrained Redline Editor",
+      "overview": "QuarkSwitch is an invisible bilingual proofreader, not a dashboard. Its visual system is a quiet native macOS workspace: graphite system surfaces, compact controls, hairline divisions, SF Symbols, and direct status language. The operating interface recedes so the correction mechanism and the user’s control remain legible.\n\nThe one expressive device is the redline correction example: a wrong-layout token is struck through in restrained red, then points to the corrected token in the current system accent. Onboarding makes this mechanism visible before asking for permissions; Settings returns to conventional macOS structure and density. All surfaces follow the user’s appearance, accent color, text settings, and accessibility preferences instead of imposing a fixed brand palette.",
+      "keyCharacteristics": [
+        "Native macOS controls and semantic system materials.",
+        "Graphite-neutral surfaces with color reserved for accent, state, and the redline example.",
+        "Compact information density, hairline dividers, and clear left-aligned settings groups.",
+        "One primary action per onboarding step and immediate paths to pause, undo, or configure.",
+        "SF Symbols with text labels; status and permission meaning never depends on color alone."
+      ],
+      "rules": [
+        {
+          "name": "The System Owns the Palette Rule",
+          "body": "Use semantic system styles so light mode, dark mode, increased contrast, and the user’s accent remain authoritative.",
+          "section": "colors"
+        },
+        {
+          "name": "The Redline Is Evidence Rule",
+          "body": "Red belongs to the incorrect token or a native destructive action; it is not decoration, branding, or a general emphasis color.",
+          "section": "colors"
+        },
+        {
+          "name": "The Icon-Plus-Language Rule",
+          "body": "Green, orange, and accent color always accompany a symbol and plain-language state.",
+          "section": "colors"
+        },
+        {
+          "name": "The Semantic Type Rule",
+          "body": "Prefer native text styles so accessibility sizing and platform metrics remain intact; use fixed sizes only for the three implemented display moments.",
+          "section": "typography"
+        },
+        {
+          "name": "The Mono Means Literal Rule",
+          "body": "Monospaced type is for typed characters, shortcuts, mappings, and identifiers—not for headings or explanatory prose.",
+          "section": "typography"
+        },
+        {
+          "name": "The Window-Chrome / Work-Area Rule",
+          "body": "Onboarding may center a single message in its stage, but Settings remains a leading-aligned work area inside the native split view.",
+          "section": "layout"
+        },
+        {
+          "name": "The Divider-Not-Card Rule",
+          "body": "Separate settings concepts with whitespace and native hairlines, not a stack of elevated rounded cards.",
+          "section": "layout"
+        },
+        {
+          "name": "The Native Depth Rule",
+          "body": "Let macOS supply focus rings, menu depth, alerts, and control elevation; do not add custom shadows to settings blocks or onboarding content.",
+          "section": "elevation"
+        },
+        {
+          "name": "The Contained Literal Rule",
+          "body": "A custom rounded fill may contain a short code, shortcut, or language pair; explanatory content remains unboxed.",
+          "section": "shapes"
+        }
+      ],
+      "dos": [
+        "Do use SwiftUI semantic colors, materials, text styles, controls, focus rings, and SF Symbols.",
+        "Do keep onboarding to one emphasized action per step and allow the limited-access path to complete honestly.",
+        "Do use leading labels and trailing controls or values for scan-friendly settings rows.",
+        "Do pair every visual status with a symbol, heading or label, and plain-language explanation.",
+        "Do preserve keyboard navigation, VoiceOver labels, heading traits, reduced-motion behavior, contrast adaptation, and legibility at increased system text sizes.",
+        "Do keep typed-content examples generic and transient; statistics surfaces show aggregate counts only."
+      ],
+      "donts": [
+        "Don't hard-code a brand blue, graphite hex palette, light-only colors, or web-style design tokens in place of macOS semantic styles.",
+        "Don't turn Settings into a dashboard of cards, charts, gradients, or custom navigation.",
+        "Don't use the redline treatment outside correction examples or native destructive actions.",
+        "Don't add decorative imagery, custom icon artwork, or marketing claims that are not part of the shipped application.",
+        "Don't communicate permission, error, pause, or readiness state through color alone.",
+        "Don't display typed words as history or imply that QuarkSwitch retains them."
+      ]
+    }
+  }
+}

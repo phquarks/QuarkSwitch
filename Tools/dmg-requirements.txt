@@ -1,0 +1,4 @@
+# Vendored in Tools/dmg-python; not installed during build.
+dmgbuild==1.6.7
+ds_store==1.3.3
+mac_alias==2.2.3

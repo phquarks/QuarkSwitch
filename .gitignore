@@ -1,0 +1,9 @@
+dist/
+build/
+DerivedData/
+*.dmg
+.DS_Store
+__pycache__/
+*.py[cod]
+xcuserdata/
+*.xcuserstate
