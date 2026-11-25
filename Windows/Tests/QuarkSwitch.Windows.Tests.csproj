@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\QuarkSwitch.Windows\LayoutConverter.cs" Link="LayoutConverter.cs" />
+    <Compile Include="..\QuarkSwitch.Windows\LanguageDetector.cs" Link="LanguageDetector.cs" />
+  </ItemGroup>
+</Project>

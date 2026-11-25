@@ -2,6 +2,8 @@
 
 QuarkSwitch is a privacy-first native macOS menu bar app that detects words typed in the wrong English or Russian keyboard layout and corrects them when confidence is high.
 
+A native Windows tray port is included under `Windows/`. It produces a self-contained portable `.exe` and a per-user NSIS installer; see `Windows/README.md`.
+
 Detection uses the local macOS spelling dictionaries in addition to frequency hints and character n-grams. Layout keys such as `[`, `;`, `'`, `,`, and `.` are retained inside the word because they may represent Russian letters. Ambiguous punctuation is resolved when the word ends at a space, Enter, or Tab; final sentence punctuation is compared separately and preserved.
 
 ## Requirements

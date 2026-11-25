@@ -1,6 +1,9 @@
 dist/
+dist-windows/
 build/
 DerivedData/
+Windows/**/bin/
+Windows/**/obj/
 *.dmg
 .DS_Store
 __pycache__/
